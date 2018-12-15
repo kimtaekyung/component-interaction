@@ -1,0 +1,7 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<app-user-list [users]="users" (remove)="removeUser($event)"></app-user-list><!-- app-user-list 에게 users 데이터 전달  (remove) 라는 이벤트 가 자식으로부터 날라오면 현재 컴포넌트에 함수를 선언하고 처리하면됨.-->
+<input type="text" #name>
+<input type="text" #role>
+<button (click)="addUser(name.value, role.value)">추가</button>
+<button (click)="dataView()">데이터보기</button>
+<router-outlet></router-outlet>

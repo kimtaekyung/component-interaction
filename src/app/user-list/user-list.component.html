@@ -1,0 +1,9 @@
+<div>
+  <ul>
+    <li *ngFor="let user of users; let i=index">
+      <span>{{i}}</span><span>{{user.id}}</span><span>{{user.name}}</span><span>{{user.role}}</span><span><button (click)="remove.emit(user)">삭제</button></span>
+      <app-user-detail [user]="user">></app-user-detail>
+    </li>
+  </ul>
+</div>
+<h1>Admin length : {{cntAdmin}}</h1>
