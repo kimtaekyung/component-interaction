@@ -7,7 +7,6 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailComponent } from './user-list/user-detail/user-detail.component';
 import { CounterComponent } from './counter/counter.component';
 import { ChildComponent } from './child/child.component';
-import { WorkComponent } from './work/work.component';
 import { HomeComponent } from './pages/home.component';
 import { ServiceComponent } from './pages/service.component';
 import { AboutComponent } from './pages/about.component';
@@ -20,7 +19,6 @@ import { NotFoundComponent } from './pages/not-found.component';
     UserDetailComponent,
     CounterComponent,
     ChildComponent,
-    WorkComponent,
     HomeComponent,
     ServiceComponent,
     AboutComponent,
