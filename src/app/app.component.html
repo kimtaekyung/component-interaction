@@ -1,4 +1,14 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<router-outlet></router-outlet>
+<nav>
+    <!-- <a [routerLink]="[ '/home', routeParam ]">home</a>
+    <a [routerLink]="[ '/about', routeParam ]">about</a>
+    <a [routerLink]="[ '/service', routeParam ]">service</a> -->
+    <a [routerLink]="[ '/home' ]">home</a>
+    <a [routerLink]="[ '/about' ]">about</a>
+    <a [routerLink]="[ '/service' ]">service</a>
+</nav>
+
 <app-user-list [users]="users" (remove)="removeUser($event)"></app-user-list><!-- app-user-list 에게 users 데이터 전달  (remove) 라는 이벤트 가 자식으로부터 날라오면 현재 컴포넌트에 함수를 선언하고 처리하면됨.-->
 <input type="text" #name>
 <input type="text" #role>
@@ -11,7 +21,7 @@
 <button (click)="decrease(num)">빼기</button>
 
 
-<router-outlet></router-outlet>
+<!--  -->
 <h1>템플릿 참조변수를 사용하여 자식 네이티브 dom 요소에 접근</h1>
 <h1 #c>color</h1>
 <button (click)="c.style.color='red'">색상 변경</button>
@@ -21,3 +31,5 @@
 <app-child></app-child>
 <button (click)="toggle()">토글</button>
 <button (click)="changeText()">변경</button>
+<!-- 라우팅 된 컴포넌트 렌더할 위치 -->
+
