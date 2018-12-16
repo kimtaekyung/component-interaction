@@ -4,4 +4,20 @@
 <input type="text" #role>
 <button (click)="addUser(name.value, role.value)">추가</button>
 <button (click)="dataView()">데이터보기</button>
+
+<h1>템플릿 참조변수를 사용하여 자식 컴포넌트에 접근</h1>
+<app-counter #num></app-counter>
+<button (click)="increase(num)">더하기</button>
+<button (click)="decrease(num)">빼기</button>
+
+
 <router-outlet></router-outlet>
+<h1>템플릿 참조변수를 사용하여 자식 네이티브 dom 요소에 접근</h1>
+<h1 #c>color</h1>
+<button (click)="c.style.color='red'">색상 변경</button>
+
+<h1>@ViewChild 를 통해서 직접 자식 컴포넌트 값 수정</h1>
+<h1>child</h1>
+<app-child></app-child>
+<button (click)="toggle()">토글</button>
+<button (click)="changeText()">변경</button>
